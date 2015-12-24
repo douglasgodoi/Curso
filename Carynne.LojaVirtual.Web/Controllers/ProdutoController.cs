@@ -14,6 +14,7 @@ namespace Carynne.LojaVirtual.Web.Controllers
         public ActionResult Index()
         {
             _repositorio = new ProdutosRepositorio();
+
             var produtos = _repositorio.Produtos.Take(10);
 
             return View(produtos);
