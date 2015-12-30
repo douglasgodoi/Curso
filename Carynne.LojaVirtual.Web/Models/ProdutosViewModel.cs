@@ -12,5 +12,7 @@ namespace Carynne.LojaVirtual.Web.Models
         public IEnumerable<Produto> Produtos { get; set; }
 
         public Paginacao Paginacao { get; set; }
+
+        public string CategoriaAtual { get; set; }
     }
 }
