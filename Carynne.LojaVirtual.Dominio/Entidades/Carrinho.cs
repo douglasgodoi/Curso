@@ -25,7 +25,7 @@ namespace Carynne.LojaVirtual.Dominio.Entidades
             }
             else
             {
-                quantidade += quantidade;
+                item.Quantidade += quantidade;
             }
         }
         
@@ -48,7 +48,7 @@ namespace Carynne.LojaVirtual.Dominio.Entidades
         }
 
         //Items carrinho
-        public IEnumerable<ItemCarrinho> ItemsCarrinho
+        public IEnumerable<ItemCarrinho> ItensCarrinho
         {
             get { return _itensCarrinho; }
         }
