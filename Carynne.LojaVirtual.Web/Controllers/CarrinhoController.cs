@@ -62,5 +62,11 @@ namespace Carynne.LojaVirtual.Web.Controllers
                 ReturnUrl = returnUrl
             });
         }
+
+        public PartialViewResult Resumo()
+        {
+            Carrinho carrinho = ObterCarrinho();
+            return PartialView(carrinho);
+        }
     }
 }
