@@ -9,6 +9,7 @@ namespace Carynne.LojaVirtual.Dominio.Entidades
 {
     public class Pedido
     {
+        [Display(Name ="Nome do cliente")]
         [Required(ErrorMessage="Informe seu nome")]
         public string NomeCliente { get; set; }
         
