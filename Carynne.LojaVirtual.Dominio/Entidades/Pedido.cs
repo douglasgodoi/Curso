@@ -23,6 +23,10 @@ namespace Carynne.LojaVirtual.Dominio.Entidades
         [Display(Name ="Cidade:")]
         public string Cidade { get; set; }
 
+        [Required(ErrorMessage = "Informe seu estado")]
+        [Display(Name = "Estado:")]
+        public string Estado { get; set; }
+
         [Display(Name ="Complemento:")]
         public string complemento { get; set; }
 
